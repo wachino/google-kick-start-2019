@@ -2,9 +2,9 @@
 
 ## Problems
 
-- [Contention](/Round%20A/Contention/README.md)
-- [Parcels](/Round%20A/Parcels/README.md)
-- [Training](/Round%20A/Training/README.md)
+- [Training](/Round%20A/Training)
+- [Parcels](/Round%20A/Parcels)
+- [Contention](/Round%20A/Contention)
 
 ## Contest results
 

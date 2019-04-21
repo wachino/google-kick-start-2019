@@ -1,5 +1,9 @@
 # Mural
 
+## Solution code
+
+See [solution source code](/Practice%20Round/Mural/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Practice%20Round/Mural/analysis.md) extracted from Google webpage.

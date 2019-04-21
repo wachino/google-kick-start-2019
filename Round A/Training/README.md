@@ -1,5 +1,9 @@
 # Training
 
+## Solution code
+
+See [solution source code](/Round%20A/Training/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%20A/Training/analysis.md) extracted from Google webpage.

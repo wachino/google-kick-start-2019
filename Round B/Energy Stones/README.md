@@ -1,5 +1,9 @@
 # Energy Stones
 
+## Solution code
+
+See [solution source code](/Round%20B/Energy%20Stones/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%20B/Energy%20Stones/analysis.md) extracted from Google webpage.

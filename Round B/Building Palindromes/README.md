@@ -1,5 +1,9 @@
 # Building Palindromes
 
+## Solution code
+
+See [solution source code](/Round%20B/Building%20Palindromes/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%20B/Building%20Palindromes/analysis.md) extracted from Google webpage.

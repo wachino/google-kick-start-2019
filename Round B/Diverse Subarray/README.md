@@ -1,5 +1,9 @@
 # Diverse Subarray
 
+## Solution code
+
+See [solution source code](/Round%20B/Diverse%20Subarray/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%20B/Diverse%20Subarray/analysis.md) extracted from Google webpage.

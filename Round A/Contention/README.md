@@ -1,5 +1,9 @@
 # Contention
 
+## Solution code
+
+See [solution source code](/Round%20A/Contention/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Round%20A/Contention/analysis.md) extracted from Google webpage.

@@ -1,5 +1,9 @@
 # Number Guessing
 
+## Solution code
+
+See [solution source code](/Practice%20Round/Number%20Guessing/solution.js)
+
 ## Analysis
 
 You can see [solution analysis](/Practice%20Round/Number%20Guessing/analysis.md) extracted from Google webpage.

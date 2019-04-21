@@ -2,9 +2,9 @@
 
 ## Problems
 
-- [Kickstart Alarm](/Practice%20Round/Kickstart%20Alarm/README.md)
-- [Mural](/Practice%20Round/Mural/README.md)
-- [Number Guessing](/Practice%20Round/Number%20Guessing/README.md)
+- [Number Guessing](/Practice%20Round/Number%20Guessing)
+- [Mural](/Practice%20Round/Mural)
+- [Kickstart Alarm](/Practice%20Round/Kickstart%20Alarm)
 
 ## Contest results
 
