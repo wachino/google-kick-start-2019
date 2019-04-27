@@ -2,7 +2,9 @@
 
 ## Solution code
 
-See [solution source code](/Practice%20Round/Kickstart%20Alarm/solution.js)
+See [solution source code c++](/Practice%20Round/Kickstart%20Alarm/solution.cpp)
+
+See [solution source code js](/Practice%20Round/Kickstart%20Alarm/solution.js)
 
 ## Analysis
 

@@ -48,7 +48,9 @@ function solution() {
       ans = (ans + ((((la * BigInt(N + 2 - i)) % mod) * BigInt(a[i - 1])) % mod)) % mod;
       xx = ((power(BigInt(i), bK + 1n) - 1n) * power(BigInt(i - 1), mod - 2n)) % mod;
       xx--;
-      if (xx < 0) xx += mod;
+      if (xx < 0) {
+        xx += mod;
+      }
       la += xx;
       la %= mod;
     }
