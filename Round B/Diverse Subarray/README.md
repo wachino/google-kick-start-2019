@@ -2,7 +2,9 @@
 
 ## Solution code
 
-See [solution source code](/Round%20B/Diverse%20Subarray/solution.js)
+See [solution source code c++](/Round%20B/Diverse%20Subarray/solution.cpp)
+
+See [solution source code js](/Round%20B/Diverse%20Subarray/solution.js)
 
 ## Analysis
 
