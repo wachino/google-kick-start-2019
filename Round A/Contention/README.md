@@ -2,7 +2,7 @@
 
 ## Solution code
 
-See [solution source code](/Round%20A/Contention/solution.js)
+See [solution source code](/Round%20A/Contention/solution.cpp)
 
 ## Analysis
 

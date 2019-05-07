@@ -21,44 +21,46 @@ function readLine() {
 }
 
 function solution() {
-  const t = Number(readLine());
-  for (let i = 0; i < t; i++) {
+  const T = Number(readLine());
+  for (let t = 0; t < T; t++) {
     let [n, q] = readLine()
       .split(' ')
       .map(Number);
 
     const seats = Array(n)
       .fill(0)
-      .map(() => ({ free: true, requestedBy: [] }));
+      .map(() => new Set());
     let bookings = [];
     for (let j = 0; j < q; j++) {
       let [l, r] = readLine()
         .split(' ')
         .map(Number);
-      bookings.push({ l: l - 1, r: r, rem: r - l + 1 });
+      bookings.push({ j, l: l - 1, r: r, rem: 0 });
       for (let k = l - 1; k < r; k++) {
-        seats[k].requestedBy.push(j);
+        seats[k].add(j);
       }
     }
 
-    const sortedBookings = bookings.slice().sort((a, b) => a.rem - b.rem);
+    for (let i = 0; i < n; i++) {
+      if (seats[i].size === 1) {
+        bookings[seats[i].values().next().value].rem++;
+      }
+    }
+    let sortedBookinns = bookings.slice().sort((b, a) => a.rem - b.rem);
     let min = Infinity;
-
     for (let j = 0; j < q; j++) {
-      let curr = sortedBookings.shift();
+      let curr = sortedBookinns.shift();
       if (curr.rem < min) {
         min = curr.rem;
       }
       for (let p = curr.l; p < curr.r; p++) {
-        if (seats[p].free) {
-          seats[p].free = false;
-          for (let k = 0; k < seats[p].requestedBy.length; k++) {
-            bookings[seats[p].requestedBy[k]].rem--;
-          }
+        seats[p].delete(curr.j);
+        if (seats[p].size === 1) {
+          bookings[seats[p].values().next().value].rem++;
+          sortedBookinns.sort((b, a) => a.rem - b.rem);
         }
       }
-      sortedBookings.sort((a, b) => a.rem - b.rem);
     }
-    console.log(`Case #${i + 1}: ${min}`);
+    console.log(`Case #${t + 1}: ${min}`);
   }
 }
