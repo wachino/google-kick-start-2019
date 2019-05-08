@@ -72,10 +72,10 @@ function solution() {
     let sortedBookings = bookings.slice().sort((a, b) => a.l - b.l);
     build(tree, sortedBookings);
 
-    sortedBookings.sort((b, a) => a.rem - b.rem);
+    makeHeap(sortedBookings, sortedBookings.length - 1);
     let min = Infinity;
     for (let j = 0; j < q; j++) {
-      let curr = sortedBookings.shift();
+      let curr = popHeap(sortedBookings, sortedBookings.length - j - 1);
       remove(tree, curr.node);
       if (curr.rem < min) {
         min = curr.rem;
@@ -91,7 +91,9 @@ function solution() {
           ub.rem += ran.r - ran.l;
         }
       }
-      sortedBookings.sort((b, a) => a.rem - b.rem);
+      if (needSort) {
+        makeHeap(sortedBookings, sortedBookings.length - j - 2);
+      }
     }
     console.log(`Case #${t + 1}: ${min}`);
   }
@@ -222,4 +224,38 @@ function overlapSearch(tree, root, interval) {
 
   let rightChildNode = (root + 1) << 1;
   return overlapSearch(tree, rightChildNode, interval);
+}
+
+function maxHeapify(arr, node, last) {
+  let leftChildNode = (node << 1) | 1;
+  let rightChildNode = (node + 1) << 1;
+  let largest = node;
+  if (leftChildNode <= last && arr[leftChildNode].rem > arr[largest].rem) {
+    largest = leftChildNode;
+  }
+  if (rightChildNode <= last && arr[rightChildNode].rem > arr[largest].rem) {
+    largest = rightChildNode;
+  }
+  if (largest !== node) {
+    let tmp = arr[node];
+    arr[node] = arr[largest];
+    arr[largest] = tmp;
+    maxHeapify(arr, largest, last);
+  }
+}
+
+function makeHeap(arr, last) {
+  for (let i = Math.floor((last - 1) / 2); i >= 0; i--) {
+    maxHeapify(arr, i, last);
+  }
+}
+
+function popHeap(arr, last) {
+  if (last >= 0) {
+    let tmp = arr[0];
+    arr[0] = arr[last];
+    arr[last] = tmp;
+    maxHeapify(arr, 0, last - 1);
+    return arr[last];
+  }
 }
