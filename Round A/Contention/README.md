@@ -3,6 +3,7 @@
 ## Solution code
 
 See [solution source code c++](/Round%20A/Contention/solution.cpp)
+
 See [solution source code js](/Round%20A/Contention/solution.js)
 
 ## Analysis
