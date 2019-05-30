@@ -13,3 +13,7 @@ This project contains my solutions for [Kick Start 2019 competition 2019](https:
 ## Round B
 
 - [Problem statements and solutions](/Round%20B)
+
+## Round C
+
+- [Problem statements and solutions](/Round%20C)
