@@ -23,6 +23,7 @@ We can optimize the previous solution to not do the same calculations with every
 Essentially, we have dp[i][j][k] where i and j still represent the same things and k is a boolean denoting if we have chosen the last color in the first i colors.
 
 Now, dp[i][j][0] = min(dp[i-1][j][0] + 0, dp[i-1][j-1][0] + 2 _ X<sub>i,1</sub>, dp[i-1][j-2][0] + 2 _ X<sub>i, 2</sub> ...)
+
 dp[i][j][1] = min(min(dp[i-1][j][1] + 0, dp[i-1][j-1][1] + 2 _ X<sub>i,1</sub>, dp[i-1][j-2][1] + 2 _ X<sub>i, 2</sub> ...),
 min(dp[i-1][j][0] + 0, dp[i-1][j-1][0] + X<sub>i,1</sub>, dp[i-1][j-2][0] + X<sub>i, 2</sub> ...))
 
