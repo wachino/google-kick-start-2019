@@ -2,11 +2,11 @@
 
 ## Solution code
 
-See [solution source code c++](/Round%20D/X%20or%20What/solution.cpp)
+See [solution source code c++](/Round%20D/X%20or%20What%3F/solution.cpp)
 
 ## Analysis
 
-You can see [solution analysis](/Round%20D/X%20or%20What/analysis.md) extracted from Google webpage.
+You can see [solution analysis](/Round%20D/X%20or%20What%3F/analysis.md) extracted from Google webpage.
 
 ## Problem
 
