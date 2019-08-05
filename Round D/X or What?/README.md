@@ -1,4 +1,4 @@
-# X or Wwhat?
+# X or What?
 
 ## Solution code
 
