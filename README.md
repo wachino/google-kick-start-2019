@@ -25,3 +25,15 @@ This project contains my solutions for [Kick Start 2019 competition 2019](https:
 ## Round E
 
 - [Problem statements and solutions](/Round%20E)
+
+## Round F
+
+- [Problem statements and solutions](/Round%20F)
+
+## Round G
+
+- [Problem statements and solutions](/Round%20G)
+
+## Round H
+
+- [Problem statements and solutions](/Round%20H)
