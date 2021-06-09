@@ -2,7 +2,7 @@
 
 ## Solution code
 
-See [solution source code c++](/Round%20E/Code-Eat%20Switcher/solution.cpp)
+See [solution source code js](/Round%20E/Code-Eat%20Switcher/solution.js)
 
 ## Analysis
 
