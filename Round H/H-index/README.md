@@ -3,6 +3,7 @@
 ## Solution code
 
 See [solution source code js](/Round%20H/H-index/solution.js)
+
 See [alternative solution source code c++](/Round%20H/H-index/solution.cpp)
 
 ## Analysis
